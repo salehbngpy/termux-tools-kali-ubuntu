@@ -8,20 +8,20 @@ echo -e "\e[34m
 ██████╦╝██║░╚███║╚██████╔╝
 ╚═════╝░╚═╝░░╚══╝░╚═════╝░"
 
-echo -e "\e[32mwelcome to BNG tool !"
+echo -e "\e[32mwelcome to BNG tools !"
 echo -e "\e[34m-----------------------------"
-echo -e "\e[35m made by : salehbng"
+echo -e "\e[35m made by : SalehBNG"
 echo -e "\e[35m telegram : SalehBNG0"
 echo -e "\e[34m-----------------------------"
-echo -e "\e[33m[1] : install ubuntu in termux "
-echo -e "\e[33m[2] : install debian in termux "
-echo -e "\e[33m[3] : install kali linux in termux "
-echo -e "\e[33m[4] : run ubuntu "
-echo -e "\e[33m[5] : run debian "
-echo -e "\e[33m[6] : run nethuter (kali linux)"
+echo -e "\e[33m[1] : Install Ubuntu In Termux "
+echo -e "\e[33m[2] : Install Debian In Termux "
+echo -e "\e[33m[3] : Install Kali linux In Termux "
+echo -e "\e[33m[4] : run Ubuntu "
+echo -e "\e[33m[5] : run Debian "
+echo -e "\e[33m[6] : run Nethuter (Kali Linux)"
 echo -e "\e[33m[0] : exit "
 echo -e "\e[34m-----------------------------"
-echo -n -e "\e[91mEnter something >>> : "
+echo -n -e "\e[91mEnter something >>> "
 read name
 if [ "$name" == "1" ]
 then
@@ -39,14 +39,10 @@ elif [ "$name" == "3" ]
 then
 	echo -e "\e[32m Access phone files\e[0m"
 	termux-setup-storage
-	sleep 3
 	echo -e "\e[32m install wget . . .\e[0m"
 	pkg install wget
-	sleep 3
 	wget -O install-nethunter-termux https://offs.ec/2MceZWr
-	sleep 3
 	chmod +x install-nethunter-termux
-	sleep 3
 	echo -e "\e[32m] Go to the installation environment\e[0m]"
 	./install-nethunter-termux
 	echo -e "\e[32m] installtion completed !"
