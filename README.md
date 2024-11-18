@@ -1,5 +1,9 @@
-# termux-tools-kali-ubuntu
-Installation of various operating systems such as Ubuntu, Kali Linux and Debian
+# git init Kalispell-[$]-[#] install=✓termux
+# git remote add origin [https:/github.com/pipX-ux-wizard/Kalispell-[$]-[#] install=✓termux](https://github.com/pipX-ux-wizard/termux-tools-kali-ubuntu/edit/main/README.md)
+# gh repo clone [pipX-ux-wizard/
+# Kalispell-[$]-[#] install=✓termux](https://github.com/pipX-ux-wizard/termux-tools-kali-ubuntu/edit/main/README.md)
+
+# termux-tools-kali-ubuntuInstallation of various operating systems such as Ubuntu, Kali Linux and Debian
 
 | Name       | Install Command | Run Command |
 |------------|-----------------|-------------|
@@ -23,3 +27,5 @@ There Are A Few Steps Before You Can Use This Tool Pack
 
 # new version
 androrat tools
+
+Update README.md hit init git add gh clone
