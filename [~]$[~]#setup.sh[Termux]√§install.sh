@@ -1,4 +1,4 @@
-`Create` ~/bin/data/data/com.termux
+"`Create` ~/bin/data/data/com.termux
 /files/usr/bin/sudo
 
 Navigation Menu
@@ -193,7 +193,7 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 EOF
 
-Append some aliases
+"Append some aliases
 cat >> $HOME/.zshrc <<- EOF
 #------------------------------------------
 alias l='ls -lh'
@@ -394,19 +394,7 @@ Default Port is:  8091
   <img width="460" height="300" src="https://github.com/pipX-ux-wizard/Kalispell~[$]~[#] install=✓termux/install-kali-termux/raw/master/Annotation%202021-08-24%20155445.png">
 </p>
 
-
-#### Open termux and paste this code to install kali on it:
-```bash
-apt update && apt install wget -y
-wget -O install_kali https:
-//github.com/
-pipX-ux-wizard/
-Kalispell~[$]~[#] install=✓termux
-chmod +x install_kali
-./install_kali
-```#### ~/startkali.sh
-
-git clone #1
+"git clone #1
 
 Merged
 #1
@@ -420,15 +408,15 @@ Conversation
 pipX-ux-wizard
 @pipX-ux-wizard pipX-ux-wizard commented 1 hour ago •
 gh repo clone pipX-ux-wizard/termux-tools-kali-ubuntu
+{
+$ git init git remote add origin 
+https://github.com/pipX-ux-wizard
+/Kalispell~[$][#] install=✓termux
 
-$ git init git remote add origin https:
-//github.com/
-pipX-ux-wizard/
-Kalispell-[$]-[#] install=✓termux
 
 
 ## NEW:
 ### Support for x86 and ARM64 and AMD64 added; now you can install kali in an Android emulator!
 
 
-~/startkali.sh
+~/startkali.sh"
