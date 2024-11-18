@@ -19,7 +19,6 @@ There Are A Few Steps Before You Can Use This Tool Pack
 5. Done! Just Run `bash BNG.sh`
 # Screenshots
 
-![1000139284](https://github.com/pipX-ux-wizard/termux-tools-kali-ubuntu/edit/pipX-ux-wizard-patch-2.11/README.md))
+![10013284](https://github.com/pipX-ux-wizard/termux-tools-kali-ubuntu/edit/pipX-ux-wizard-patch-2.11/README.md))
 
-# new version
-androrat tools
+# new version v1.2.0
