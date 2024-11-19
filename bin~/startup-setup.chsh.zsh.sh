@@ -1,37 +1,27 @@
-# apt install git
+****~/startup-setup.chsh.zsh
 
-git clone https://gitlab.com/st42/termux-sudo
+Update Your Repositories with pkg update And pkg upgrade
+Install Git So You Can Download This Tool pkg install git
+Clone This Repo git clone [https://github.com/pipX-ux-wizard/termux-tools-kali-ubuntu/edit/pipX-ux-wizard-patch-2.11/README.md]
+Move To The Directory Of The Repo 
+~cd HOME/startup-setup.sh/
+bin/data/data/com.termux/
+files/usr/bin/
 
-cd termux-sudo su
+Create ~/HOME/startup-setup.sh/bin/data/data/com.termux
+/files/usr/bin/
 
-cat sudo > /data/data/com.termux/files/usr/bin/sudo
+Navigation Menu
 
-chmod 700 /data/data/com.termux/files/usr/bin/sudo
-
-sudo dpkg --force-architecture -i 
-<kali-linux-large>.deb
-
-###############################
-
-$ termux-setup-storage
-
-Update Your Repositories with pkg update
-And pkg upgrade
-Install Git So You Can Download This 
-Toolpkg install git
-Clone This Repo git clone https://github.com/pipX-ux-wizard
-/termux-tools-kali-ubuntu/pull/1
-Move To The Directory Of The Repocd 
-termux-tools-kali-ubuntu
-Give The Bash File Execute Permissionschmod +x BNG.sh
-Done! Just Runbash BNG.sh
-
-
-###############################
-
-git clone https://github.com/pipX-ux-wizard/termux-tools-kali-ubuntu/pull/1
-#  Merged 
-https://github.com/pipX-ux-wizard/termux-tools-kali-ubuntu/pull/1
+Code
+Pull requests
+Actions
+Jump to bottom
+Kalispell-[$]-[#] install=✓termux #1
+ Merged
+pipX-ux-wizard merged 1 commit into main from pipX-ux-wizard-patch-2.11  1 hour ago
+ Merged
+Kalispell-[$]-[#] install=✓termux
 #1
 pipX-ux-wizard merged 1 commit into main from pipX-ux-wizard-patch-2.11  1 hour ago
 Conversation 1
@@ -41,9 +31,51 @@ Files changed 3
 Conversation
 pipX-ux-wizard
 @pipX-ux-wizard pipX-ux-wizard commented 1 hour ago • 
+apt install git
+git clone https://gitlab.com/st42/termux-sudo
+
+cd termux-sudo su
+
+cat sudo > /data/data/com.termux/files/usr/bin/sudo
+
+chmod 700 /data/data/com.termux/files/usr/bin/sudo
+
+sudo dpkg --force-architecture -i
+.deb
+
+###############################
+
+$ termux-setup-storage
+
+Update Your Repositories with pkg update
+And pkg upgrade
+Install Git So You Can Download This
+Toolpkg install git
+Clone This Repo git clone https://github.com/pipX-ux-wizard
+/termux-tools-kali-ubuntu/pull/1
+Move To The Directory Of The Repocd
+termux-tools-kali-ubuntu
+Give The Bash File Execute Permissionschmod +x BNG.sh
+Done! Just Runbash BNG.sh
+
+###############################
+
+git clone #1
+
+Merged
+#1
+#1
+pipX-ux-wizard merged 1 commit into main from pipX-ux-wizard-patch-2.11 1 hour ago
+Conversation 1
+Commits 1
+Checks 0
+Files changed 3
+Conversation
+pipX-ux-wizard
+@pipX-ux-wizard pipX-ux-wizard commented 1 hour ago •
 gh repo clone pipX-ux-wizard/termux-tools-kali-ubuntu
 
-git init.git remote add origin https:
+$ git init git remote add origin https:
 //github.com/
 pipX-ux-wizard/
 Kalispell-[$]-[#] install=✓termux
@@ -133,7 +165,8 @@ fi
 
 Setup OMZ and Termux Configs
 setup_omz() {
-# backup previous termux and omz files
+
+backup previous termux and omz files
 echo -e ${GREEN}"[] Setting up OMZ and termux configs..."
 omz_files=(.oh-my-zsh .termux .zshrc)
 for file in "${omz_files[@]}"; do
@@ -144,16 +177,19 @@ else
 echo -e ${MAGENTA}"\n[!] $file Doesn't Exist."
 fi
 done
-# installing omz
+
+installing omz
 echo -e ${CYAN}"\n[] Installing Oh-my-zsh... \n"
 { reset_color; git clone https://github.com/robbyrussell/oh-my-zsh.git --depth 1 $HOME/.oh-my-zsh; }
 cp $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
 sed -i -e 's/ZSH_THEME=./ZSH_THEME="aditya"/g' $HOME/.zshrc
 sed -i -e 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' $HOME/.zshrc
 sed -i -e 's|# export PATH=.*|export PATH=$HOME/.local/bin:$PATH|g' $HOME/.zshrc
-# ZSH theme
+
+ZSH theme
 cat > $HOME/.oh-my-zsh/custom/themes/aditya.zsh-theme <<- EOF
-# Default OMZ theme
+
+Default OMZ theme
 if [[ "$USER" == "root" ]]; then
 PROMPT="%(?:%{$fg_bold[red]%}%{$fg_bold[yellow]%}%{$fg_bold[red]%} :%{$fg_bold[red]%} )"
 PROMPT+='%{$fg[cyan]%} %c%{$reset_color%} $(git_prompt_info)'
@@ -166,7 +202,8 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 EOF
-# Append some aliases
+
+Append some aliases
 cat >> $HOME/.zshrc <<- EOF
 #------------------------------------------
 alias l='ls -lh'
@@ -184,48 +221,52 @@ alias lc='lolcat'
 alias xx='chmod +x'
 alias rel='termux-reload-settings'
 #------------------------------------------
-# SSH Server Connections
-# linux (Arch)
+
+SSH Server Connections
+linux (Arch)
 alias arch='ssh UNAME@IP -i ~/.ssh/id_rsa.DEVICE'
-# linux sftp (Arch)
+
+linux sftp (Arch)
 alias archfs='sftp -i ~/.ssh/id_rsa.DEVICE UNAME@IP'
 EOF
 
-# configuring termux
+configuring termux
 echo -e ${CYAN}"\n[*] Configuring Termux..."
 reset_color
 if [[ ! -d "$HOME/.termux" ]]; then
-	mkdir $HOME/.termux
+mkdir $HOME/.termux
 fi
-# button config
-cat > $HOME/.termux/termux.properties <<- _EOF_
-	extra-keys = [ \\
-	 ['ESC','|', '/', '~','HOME','UP','END'], \\
-	 ['CTRL', 'TAB', '=', '-','LEFT','DOWN','RIGHT'] \\
-	]	
-_EOF_
-# change shell and reload configs
+
+button config
+cat > $HOME/.termux/termux.properties <<- EOF
+extra-keys = [ \
+['ESC','|', '/', '~','HOME','UP','END'], \
+['CTRL', 'TAB', '=', '-','LEFT','DOWN','RIGHT'] \
+]
+EOF
+
+change shell and reload configs
 { chsh -s zsh; termux-reload-settings; termux-setup-storage; }
 if [[ ! -d "$HOME/Downloads" ]]; then
-	mkdir $HOME/Downloads 
+mkdir $HOME/Downloads
 fi
 if [[ ! -d "$HOME/Templates" ]]; then
-	mkdir $HOME/Templates 
+mkdir $HOME/Templates
 fi
 if [[ ! -d "$HOME/Public" ]]; then
-	mkdir $HOME/Public
+mkdir $HOME/Public
 fi
 if [[ ! -d "$HOME/Documents" ]]; then
-	mkdir $HOME/Documents 
+mkdir $HOME/Documents
 fi
 if [[ ! -d "$HOME/Pictures" ]]; then
-	mkdir $HOME/Pictures 
+mkdir $HOME/Pictures
 fi
 if [[ ! -d "$HOME/Video" ]]; then
-	mkdir $HOME/Video 
+mkdir $HOME/Video
 fi
 if [[ ! -d "$HOME/Pictures/backgrounds" ]]; then
-	mkdir $HOME/Pictures/backgrounds
+mkdir $HOME/Pictures/backgrounds
 fi
 }
 
@@ -310,5 +351,94 @@ setup_finaly
 Main
 install_vsc
 
-#  ~/startkali
-      .sh
+/data/local/tmp
+
+bash 
+     sudo nano /etc/apt/sources.list
+
+     
+     # Add user.
+useradd -m anton
+# -m creates a home directory for the user.
+
+# Set Password.
+passwd anton
+
+# Set user group to sudo.
+usermod -a -G sudo anton
+# -a option to add and ‘-G sudo’ means to add the user to the sudo group.
+
+chsh -s /bin/bash anton
+# chsh command is used to change the login shell for a user.
+     
+     
+apt-get update && apt-get upgrade -y
+
+apt install git -y
+git clone https://github.com/Dark-Legends/Terminal-backup
+cd Terminal-backup && chmod +x
+terminal-backup 
+
+
+
+./terminal-backup
+
+Default Port is:  8091
+
+[*] Default password is:  123qwe
+[*] Run  code-server  for start.
+
+
+
+     
+     
+     
+     
+     
+     
+     # ~/install-kali-termux
+### Custom Kali installation based on the minimal file-system of the official nethunter repositories from Offensive Security, in termux with a rooted device.
+### More functions were added than in the script provided by offensive security and I will add more when the time comes.
+
+<p align="center">
+  <img width="460" height="300" src="https://github.com/pipX-ux-wizard/Kalispell~[$]~[#] install=✓termux/install-kali-termux/raw/master/Annotation%202021-08-24%20155445.png">
+</p>
+
+
+#### Open termux and paste this code to install kali on it:
+```bash
+apt update && apt install wget -y
+wget -O install_kali https:
+//github.com/
+pipX-ux-wizard/
+Kalispell~[$]~[#] install=✓termux
+chmod +x install_kali
+./install_kali
+```#### ~/startkali.sh
+
+git clone #1
+
+Merged
+#1
+#1
+pipX-ux-wizard merged 1 commit into main from pipX-ux-wizard-patch-2.11 1 hour ago
+Conversation 1
+Commits 1
+Checks 0
+Files changed 3
+Conversation
+pipX-ux-wizard
+@pipX-ux-wizard pipX-ux-wizard commented 1 hour ago •
+gh repo clone pipX-ux-wizard/termux-tools-kali-ubuntu
+
+$ git init git remote add origin https:
+//github.com/
+pipX-ux-wizard/
+Kalispell-[$]-[#] install=✓termux
+
+
+## NEW:
+### Support for x86 and ARM64 and AMD64 added; now you can install kali in an Android emulator!
+
+
+~/startup-setup.chsh.zsh.sh
