@@ -11,35 +11,6 @@ files/usr/bin/
 Create ~/HOME/startup-setup.sh/bin/data/data/com.termux
 /files/usr/bin/
 
-Navigation Menu
-
-Code
-Pull requests
-Actions
-Jump to bottom
-Kalispell-[$]-[#] install=✓termux #1
- Merged
-pipX-ux-wizard merged 1 commit into main from pipX-ux-wizard-patch-2.11  1 hour ago
- Merged
-Kalispell-[$]-[#] install=✓termux
-#1
-pipX-ux-wizard merged 1 commit into main from pipX-ux-wizard-patch-2.11  1 hour ago
-Conversation 1
-Commits 1
-Checks 0
-Files changed 3
-Conversation
-pipX-ux-wizard
-@pipX-ux-wizard pipX-ux-wizard commented 1 hour ago • 
-apt install git
-git clone https://gitlab.com/st42/termux-sudo
-
-cd termux-sudo su
-
-cat sudo > /data/data/com.termux/files/usr/bin/sudo
-
-chmod 700 /data/data/com.termux/files/usr/bin/sudo
-
 sudo dpkg --force-architecture -i
 .deb
 
