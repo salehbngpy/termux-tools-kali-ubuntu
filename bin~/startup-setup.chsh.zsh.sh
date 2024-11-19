@@ -1,4 +1,4 @@
-****~/startup-setup.chsh.zsh
+****~/startup-setup.chsh.zsh.sh
 
 Update Your Repositories with pkg update And pkg upgrade
 Install Git So You Can Download This Tool pkg install git
