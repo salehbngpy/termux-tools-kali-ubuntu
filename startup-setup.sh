@@ -1,16 +1,3 @@
-# termux-tools-kali-Ant's-Build.v1.2
-Installation of various operating systems such as Ubuntu, Kali Linux and Debian
-
-| Name       | Install Command | Run Command |
-|------------|-----------------|-------------|
-| Kali Linux | 3               | 6           |
-| Ubuntu     | 1               | 4           |
-| Debian     | 2               | 5           |
-| Exit       | -               | 0           |
-
-# Installation Steps
-There Are A Few Steps Before You Can Use This Tool Pack
-
 Update Your Repositories with pkg update And pkg upgrade
 Install Git So You Can Download This Tool pkg install git
 Clone This Repo git clone [https://github.com/pipX-ux-wizard/termux-tools-kali-ubuntu/edit/pipX-ux-wizard-patch-2.11/README.md]
@@ -451,13 +438,4 @@ Kalispell-[$]-[#] install=âœ“termux
 ## NEW:
 ### Support for x86 and ARM64 and AMD64 added; now you can install kali in an Android emulator!
 
-
-~/startkali.sh
-
-
-
-# Screenshots
-
-![10013284](https://github.com/pipX-ux-wizard/termux-tools-kali-ubuntu/edit/pipX-ux-wizard-patch-2.11/README.md))
-
-# new version v1.2.0
+./startup-setup.sh
