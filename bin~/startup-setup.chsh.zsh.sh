@@ -1,15 +1,4 @@
-# termux-tools-kali-Ant's-Build.v1.2
-Installation of various operating systems such as Ubuntu, Kali Linux and Debian
-
-| Name       | Install Command | Run Command |
-|------------|-----------------|-------------|
-| Kali Linux | 3               | 6           |
-| Ubuntu     | 1               | 4           |
-| Debian     | 2               | 5           |
-| Exit       | -               | 0           |
-
-# Installation Steps
-There Are A Few Steps Before You Can Use This Tool Pack
+****~/startup-setup.chsh.zsh.sh
 
 Update Your Repositories with pkg update And pkg upgrade
 Install Git So You Can Download This Tool pkg install git
@@ -21,35 +10,6 @@ files/usr/bin/
 
 Create ~/HOME/startup-setup.sh/bin/data/data/com.termux
 /files/usr/bin/
-
-Navigation Menu
-
-Code
-Pull requests
-Actions
-Jump to bottom
-Kalispell-[$]-[#] install=âœ“termux #1
- Merged
-pipX-ux-wizard merged 1 commit into main from pipX-ux-wizard-patch-2.11  1 hour ago
- Merged
-Kalispell-[$]-[#] install=âœ“termux
-#1
-pipX-ux-wizard merged 1 commit into main from pipX-ux-wizard-patch-2.11  1 hour ago
-Conversation 1
-Commits 1
-Checks 0
-Files changed 3
-Conversation
-pipX-ux-wizard
-@pipX-ux-wizard pipX-ux-wizard commented 1 hour ago â€¢ 
-apt install git
-git clone https://gitlab.com/st42/termux-sudo
-
-cd termux-sudo su
-
-cat sudo > /data/data/com.termux/files/usr/bin/sudo
-
-chmod 700 /data/data/com.termux/files/usr/bin/sudo
 
 sudo dpkg --force-architecture -i
 .deb
@@ -83,15 +43,15 @@ Checks 0
 Files changed 3
 Conversation
 pipX-ux-wizard
-@pipX-ux-wizard pipX-ux-wizard commented 1 hour ago â€¢
+@pipX-ux-wizard pipX-ux-wizard commented 1 hour ago •
 gh repo clone pipX-ux-wizard/termux-tools-kali-ubuntu
 
 $ git init git remote add origin https:
 //github.com/
 pipX-ux-wizard/
-Kalispell-[$]-[#] install=âœ“termux
+Kalispell-[$]-[#] install=✓termux
 
-Kalispell-[$]-[#] install:=âœ“Termux
+Kalispell-[$]-[#] install:=✓Termux
 
 LABS-MARKER-1
 
@@ -202,15 +162,15 @@ cat > $HOME/.oh-my-zsh/custom/themes/aditya.zsh-theme <<- EOF
 
 Default OMZ theme
 if [[ "$USER" == "root" ]]; then
-PROMPT="%(?:%{$fg_bold[red]%}ï„…%{$fg_bold[yellow]%}ï„…%{$fg_bold[red]%}ï„… :%{$fg_bold[red]%}ï„…ï„…ï„… )"
-PROMPT+='%{$fg[cyan]%}ï» %c%{$reset_color%} $(git_prompt_info)'
+PROMPT="%(?:%{$fg_bold[red]%}%{$fg_bold[yellow]%}%{$fg_bold[red]%} :%{$fg_bold[red]%} )"
+PROMPT+='%{$fg[cyan]%} %c%{$reset_color%} $(git_prompt_info)'
 else
-PROMPT="%(?:%{$fg_bold[red]%}ï„…%{$fg_bold[green]%}ï„…%{$fg_bold[yellow]%}ï„… :%{$fg_bold[red]%}ï„…ï„…ï„… )"
-PROMPT+='%{$fg[cyan]%}ï» %c%{$reset_color%} $(git_prompt_info)'
+PROMPT="%(?:%{$fg_bold[red]%}%{$fg_bold[green]%}%{$fg_bold[yellow]%} :%{$fg_bold[red]%} )"
+PROMPT+='%{$fg[cyan]%} %c%{$reset_color%} $(git_prompt_info)'
 fi
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}ï„“ git:(%{$fg[red]%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%} git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}âœ—"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 EOF
 
@@ -377,7 +337,7 @@ passwd anton
 
 # Set user group to sudo.
 usermod -a -G sudo anton
-# -a option to add and â€˜-G sudoâ€™ means to add the user to the sudo group.
+# -a option to add and ‘-G sudo’ means to add the user to the sudo group.
 
 chsh -s /bin/bash anton
 # chsh command is used to change the login shell for a user.
@@ -412,7 +372,7 @@ Default Port is:  8091
 ### More functions were added than in the script provided by offensive security and I will add more when the time comes.
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/pipX-ux-wizard/Kalispell~[$]~[#] install=âœ“termux/install-kali-termux/raw/master/Annotation%202021-08-24%20155445.png">
+  <img width="460" height="300" src="https://github.com/pipX-ux-wizard/Kalispell~[$]~[#] install=✓termux/install-kali-termux/raw/master/Annotation%202021-08-24%20155445.png">
 </p>
 
 
@@ -422,7 +382,7 @@ apt update && apt install wget -y
 wget -O install_kali https:
 //github.com/
 pipX-ux-wizard/
-Kalispell~[$]~[#] install=âœ“termux
+Kalispell~[$]~[#] install=✓termux
 chmod +x install_kali
 ./install_kali
 ```#### ~/startkali.sh
@@ -439,25 +399,17 @@ Checks 0
 Files changed 3
 Conversation
 pipX-ux-wizard
-@pipX-ux-wizard pipX-ux-wizard commented 1 hour ago â€¢
+@pipX-ux-wizard pipX-ux-wizard commented 1 hour ago •
 gh repo clone pipX-ux-wizard/termux-tools-kali-ubuntu
 
 $ git init git remote add origin https:
 //github.com/
 pipX-ux-wizard/
-Kalispell-[$]-[#] install=âœ“termux
+Kalispell-[$]-[#] install=✓termux
 
 
 ## NEW:
 ### Support for x86 and ARM64 and AMD64 added; now you can install kali in an Android emulator!
 
 
-~/startkali.sh
-
-
-
-# Screenshots
-
-![10013284](https://github.com/pipX-ux-wizard/termux-tools-kali-ubuntu/edit/pipX-ux-wizard-patch-2.11/README.md))
-
-# new version v1.2.0
+~/startup-setup.chsh.zsh.sh
