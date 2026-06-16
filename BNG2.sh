@@ -12,7 +12,7 @@ echo -e "\e[34m
 echo -e "\e[32mwelcome to BNG tool !"
 echo -e "\e[34m-----------------------------"
 echo -e "\e[35m made by : salehbng"
-echo -e "\e[35m github : github.com/salehbngpy
+echo -e "\e[35m github : github.com/salehbngpy"
 echo -e "\e[34m-----------------------------"
 echo -e "\e[33m[1] : install ubuntu in termux "
 echo -e "\e[33m[2] : install debian in termux "
@@ -165,7 +165,7 @@ echo -e "\e[34m
 echo -e "\e[32mwelcome to BNG tool !"
 echo -e "\e[34m-----------------------------"
 echo -e "\e[35m made by : salehbng"
-echo -e "\e[35m github : github.com/salehbngpy
+echo -e "\e[35m github : github.com/salehbngpy"
 echo -e "\e[34m-----------------------------"
 echo -e "\e[33m[1] : install ubuntu in termux "
 echo -e "\e[33m[2] : install debian in termux "
