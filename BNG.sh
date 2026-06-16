@@ -11,7 +11,7 @@ echo -e "\e[34m
 echo -e "\e[32mwelcome to BNG tools !"
 echo -e "\e[34m-----------------------------"
 echo -e "\e[35m made by : SalehBNG"
-echo -e "\e[35m telegram : SalehBNG0"
+echo -e "\e[35m github : github.com/salehbngpy 
 echo -e "\e[34m-----------------------------"
 echo -e "\e[33m[1] : Install Ubuntu In Termux "
 echo -e "\e[33m[2] : Install Debian In Termux "
